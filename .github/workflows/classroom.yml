@@ -20,7 +20,7 @@ jobs:
         test-name: test
         setup-command: |
           gcc tes.c -o tes
-        command: "./tes.c"
+        command: "./tes"
         input: test
         expected-output: test
         comparison-method: exact
