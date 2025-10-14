@@ -28,6 +28,6 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        TEST_RESULTS: "${{steps.test.outputs.result}}"
+        TEST_RESULTS: "${{steps.hw3-1.outputs.result}}"
       with:
         runners: "hw3-1"
