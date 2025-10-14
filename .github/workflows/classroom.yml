@@ -30,4 +30,4 @@ jobs:
       env:
         TEST_RESULTS: "${{steps.test.outputs.result}}"
       with:
-        runners: hw3-1
+        runners: "hw3-1"
