@@ -17,12 +17,11 @@ jobs:
       id: test
       uses: classroom-resources/autograding-io-grader@v1
       with:
-        test-name: test
+        test-name: hw3-1.c
         setup-command: |
-          gcc tes.c -o tes
-        command: "./tes"
-        input: test
-        expected-output: test
+          gcc hw3-1.c -o hw3-1
+        command: "./hw3-1"
+        expected-output: Hello World
         comparison-method: exact
         timeout: 10
         max-score: 10
@@ -31,4 +30,4 @@ jobs:
       env:
         TEST_RESULTS: "${{steps.test.outputs.result}}"
       with:
-        runners: test
+        runners: hw3-1.c
