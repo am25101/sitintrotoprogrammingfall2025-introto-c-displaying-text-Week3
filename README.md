@@ -1,4 +1,4 @@
-# HW1 — Displaying Text
+# Week3 Assignment — Displaying Text
 
 ## Objective
 Write a program that outputs the **exact same text** as shown below.
