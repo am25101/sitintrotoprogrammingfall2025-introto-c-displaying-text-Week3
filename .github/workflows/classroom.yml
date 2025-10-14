@@ -13,8 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: test
-      id: test
+    - name: hw3-1
+      id: hw3-1
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: hw3-1.c
@@ -30,4 +30,4 @@ jobs:
       env:
         TEST_RESULTS: "${{steps.test.outputs.result}}"
       with:
-        runners: hw3-1.c
+        runners: hw3-1
